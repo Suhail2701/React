@@ -103,7 +103,7 @@ const Header = () => {
                 </div>
 
                 <div className="flex items-center ">
-                    <ul className="flex  text-2xl px-3 xs:px-[2px] xs:text-[12px] sm:text-[20px] md:text-2xl text-slate-700  hover:text-slate-900 xs:leading-4 items-center font-bold">
+                    <ul className="flex  text-2xl px-3 xs:px-[2px] xs:text-[12px] sm:text-[20px] md:text-2xl text-slate-700  hover:text-slate-900 xs:leading-4 items-center font-normal">
                         {/* <li className="px-3">Online Status: {onlineStatus?"🟢":"🔴"}</li> */}
                         {/* {LoginUser &&<li><Link to="/gpt">GPT</Link></li>} */}
                         {LoginUser && <li className="px-3 xs:px-[5px] sm:px-[8px] md:px-3 dark:text-white "><Link to="/list">Home</Link></li>}
