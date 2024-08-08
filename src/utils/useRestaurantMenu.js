@@ -6,14 +6,14 @@ const useRestaurantMenu = (resId) => {
 
     const [resInfo, setResinfo] = useState(null);
 
-    const url = `${PROXY_URL}${MENU_API}${resId}`;
+    // const url = `${PROXY_URL}${MENU_API}${resId}`;
     console.log(url);
 
     useEffect(() => {
 
         const fetchData = async () => {
             try {
-                const data = await fetch(url);
+                const data = await fetch( MENU_API + resId );
                 const json = await data.json();
                 setResinfo(json);
             } catch (err) {
