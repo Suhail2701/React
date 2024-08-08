@@ -97,13 +97,13 @@ const Header = () => {
 
     return (
         <div className={`${darkModeState && "dark"}`}>
-            <div className="flex justify-between p-2 shadow-lg px-6 dark:bg-customGray xs:px-3 ">
+            <div className="flex justify-between p-2 shadow-lg px-6 dark:bg-customGray xs:px-3 xs:flex-col xs:items-center xs:justify-center">
                 <div className="logo-container">
                     <img className="w-36 xs:w-16 sm:w-28 md:w-36" src={darkModeState ? logoImg2 : logoImg} />
                 </div>
 
                 <div className="flex items-center ">
-                    <ul className="flex  text-2xl px-3 xs:px-[2px] xs:text-[12px] sm:text-[20px] md:text-2xl text-slate-700  hover:text-slate-900 xs:leading-4 items-center font-normal">
+                    <ul className="flex  text-2xl px-3 xs:px-[2px] xs:text-[15px] sm:text-[20px] md:text-2xl text-slate-700  hover:text-slate-900 xs:leading-4 items-center xs:justify-around xs:mt-2 xs:mb-2">
                         {/* <li className="px-3">Online Status: {onlineStatus?"🟢":"🔴"}</li> */}
                         {/* {LoginUser &&<li><Link to="/gpt">GPT</Link></li>} */}
                         {LoginUser && <li className="px-3 xs:px-[5px] sm:px-[8px] md:px-3 dark:text-white "><Link to="/list">Home</Link></li>}
