@@ -7,7 +7,7 @@ const useRestaurantMenu = (resId) => {
     const [resInfo, setResinfo] = useState(null);
 
     // const url = `${PROXY_URL}${MENU_API}${resId}`;
-    console.log(url);
+    // console.log(url);
 
     useEffect(() => {
 
