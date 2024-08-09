@@ -67,7 +67,7 @@ const DashBoard = () => {
                             className="max-h-[250px] md:max-h-[400px]" />
                     </div>
                 </div>
-                <div className=" mt-10 md:mt-36 flex justify-center items-center p-4   text-yellow-500 text-xl dark:text-white ">
+                <div className=" mt-6 md:mt-36 flex justify-center items-center p-4   text-yellow-500 text-xl dark:text-white ">
                     Created by Suhail Ahmed {!darkModeState ? "💛" : "🤍"}
                 </div>
             </div>
