@@ -64,7 +64,7 @@ const DashBoard = () => {
                     </div>
                     <div className="w-full md:w-4/12   flex justify-center items-center ">
                         <img src={imageMap[count]} alt="Images"
-                            className="max-h-[300px] md:max-h-[400px]" />
+                            className="max-h-[250px] md:max-h-[400px]" />
                     </div>
                 </div>
                 <div className=" mt-10 md:mt-36 flex justify-center items-center p-4   text-yellow-500 text-xl dark:text-white ">
