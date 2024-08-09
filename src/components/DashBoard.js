@@ -28,20 +28,20 @@ const DashBoard = () => {
     }, []);
 
     return (
-        <div className={`${darkModeState && "dark"}`}>
-            <div className="  p-4 dark:bg-customBlue  h-screen  flex flex-col items-center justify-center">
-                <div className="flex flex-col md:flex-row justify-between border border-solid border-black mt-[102px] xs:flex-col ">
-                    <div className=" flex justify-center  md:w-8/12 border border-solid border-black flex-col">
+        <div className={`${darkModeState && "dark"} ` }>
+            <div className="  p-4 dark:bg-customBlue min-h-screen  ">
+                <div className="flex flex-col md:flex-row justify-between  md:mt-[73px] ">
+                    <div className=" flex justify-center  md:w-8/12  flex-col">
                         <div className=" text-center ">
-                            <div className="text-5xl md:text-8xl font-bold  my-4 p-2 dark:text-white xs:text-5xl xs:my-2"> We <span className="text-yellow-500 dark:text-customBlue2"> Teleport </span> Food.</div>
-                            <div className="text-4xl md:text-7xl text-gray-500 my-4 p-2 xs:text-4xl xs:my-2"><span>Don't ask how</span></div>
-                            <div className="my-4 p-2 xs:my-2">
+                            <div className="text-5xl md:text-8xl font-bold  my-4 p-2 dark:text-white "> We <span className="text-yellow-500 dark:text-customBlue2"> Teleport </span> Food.</div>
+                            <div className="text-4xl md:text-7xl text-gray-500 my-4 p-2 xs:text-4xl "><span>Don't ask how</span></div>
+                            <div className="my-4 p-2 ">
                                 <TypeAnimation
-                                    sequence={[" Order Now!", 1000, ""]}
+                                    sequence={[" Order Now!", 1000, ""]}    
                                     speed={10}
                                     cursor={true}
                                     repeat={Infinity}
-                                    className=" text-3xl md:text-6xl text-yellow-500 whitespace-break-spaces  dark:text-white xs:text-3xl"
+                                    className=" text-3xl md:text-6xl text-yellow-500 whitespace-break-spaces  dark:text-white "
                                 />
                             </div>
                             <div className="my-8 p-2 flex justify-center">
@@ -62,12 +62,12 @@ const DashBoard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full  md:w-4/12  border border-solid border-black flex justify-center items-center     xs:m-auto xs:p-1 xs:mt-10">
+                    <div className="w-full md:w-4/12   flex justify-center items-center ">
                         <img src={imageMap[count]} alt="Images"
-                            className="max-h-[400px]" />
+                            className="max-h-[300px] md:max-h-[400px]" />
                     </div>
                 </div>
-                <div className=" mt-32 md:mt-36 flex justify-center items-center p-4   text-yellow-500 text-xl dark:text-white">
+                <div className=" mt-10 md:mt-36 flex justify-center items-center p-4   text-yellow-500 text-xl dark:text-white ">
                     Created by Suhail Ahmed {!darkModeState ? "💛" : "🤍"}
                 </div>
             </div>
