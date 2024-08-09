@@ -97,7 +97,7 @@ const Header = () => {
 
     return (
         <div className={`${darkModeState && "dark"}`}>
-            <div className="flex justify-between p-2 shadow-lg px-6 dark:bg-customGray xs:px-3 xs:flex-col xs:items-center xs:justify-center">
+            <div className={`flex justify-between p-2 shadow-lg px-6 dark:bg-customGray xs:px-3  xs:items-center xs:justify-center ${LoginUser ?'xs:flex-col':'xs:flex-row'} ${!LoginUser && 'xs:justify-between'}`}>
                 <div className="logo-container">
                     <img className="w-36 xs:w-16 sm:w-28 md:w-36" src={darkModeState ? logoImg2 : logoImg} />
                 </div>
